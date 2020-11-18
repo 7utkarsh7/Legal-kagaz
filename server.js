@@ -21,5 +21,5 @@ app.get('/:abc', function(req, res) {
     res.render('pages/comingsoon');
 });
 
-app.listen(3000);
+app.listen(3000 || process.env.PORT);
 console.log('3000 is the magic port');
