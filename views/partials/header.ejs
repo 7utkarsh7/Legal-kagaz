@@ -1,6 +1,17 @@
-<div style="display: flex; left: 0;">
+<div style="display: flex; left: 0;width: 1340px; height: 8%;" class="topnav" id="myTopnav">
     <h1 class="logo"><strong>Legal</strong> Kagaz</h1>
         <ul>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
            <li class="dropdown">
             <a class="active" href="javascript:void(0)">Staffing Management</a>
             <div class="dropdown-content">

@@ -1,26 +1,26 @@
-p {
+  p{
     font-family: Montsearrat, sans-serif;
   }
-  main{
-    width:1340px;
-    left: 0px;
+  body{
+    width: 100%;
   }
-  .container{
-    margin: 0px;
-    padding: 0px;
+  main{
+    width:100%;
+    left: 0;
+  }
+  header{
+    width: 100%;
   }
   ul {
     list-style-type: none;
     font-family: Montsearrat, sans-serif;
     margin: 10;
     padding: 0;
-    
     background-color: white;
     text-decoration: none;
-    /* remove comment below to see effect*/
     position: fixed;
     top: 0;
-    width: 1340px; /* Full width */
+    width: 100%;
     }
   li {
     float: right;
@@ -29,8 +29,9 @@ p {
     text-decoration: none;
     letter-spacing: 0.2px;
   }
-  /* Add an ''active'' to current link to know user which page he is on */
-  
+  .icon{
+    display: none;
+  }
   li a.active {
     background-color:white;
     color: #000000;
@@ -67,7 +68,6 @@ p {
     text-decoration: none;
     display: block;
     text-align: left;
-    line-height: 1;
   }
   .dropdown-content a:hover {
     background-color: #4CAF50
@@ -89,7 +89,7 @@ p {
   #intro{
       text-align: center;
       padding:2% 8% 8% 8%;
-      width: 1340px;
+      width: 100%;
   }
   #intro h1, #benefits h1,#how-it-works h1, #pricing h1{
       font-weight: 700;
@@ -106,7 +106,7 @@ p {
     padding: 4% 5%;
   }
   #how-it-works{
-    width: 1340px;
+    width: 100%;
   }
   #how-it-works p{
    padding-top: 1%;
@@ -160,7 +160,7 @@ p {
    font-weight: 700;
  }
 table{
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -188,15 +188,37 @@ footer{
   text-align: center;
   background-color: rgb(3, 89, 92);
   color: white;
-  width: 1350px;
-  margin:50px auto 0px;
+  width: 100%;
+  margin:50px 0 0;
 }
 .icons{
-  padding-top: 3% ;
+  padding-top: 2% ;
   padding-left: 1%;
   padding-right: 1%;
 }
 footer p{
   padding-top: 10px;
   margin: 0;
+}
+.feature p{
+  width: 95%;
+}
+@media screen and (max-width: 600px){
+  .dropdown{display: none;}
+  .icon{display: block;color: black;height: 60px;width: 60px; font-size: 36px;text-decoration: none;}
+   ul{height: 70px;}
+   li a{display: none;}
+   .benefit-col{display: flex; flex-direction: column;}
+   .benefit{display: flex; flex-direction: column; padding: 0; margin: 0px; padding-top: 5%; width: 100%; align-items: center; text-align: center;}
+    .benefit p{padding-top: 2%;}
+    .feature img{margin-left: 110%;}
+    .feature h4, .feature p{ width: 200%; }
+    .comingsoon{ margin-top: 30%; padding-bottom: 40%;}
+  }
+@media screen and (max-width: 600px){
+  .topnav.responsive .dropdown{display: block; width: 100%;}
+  .topnav.responsive li a{display: block; width: 100%; text-align: center;}
+  .topnav.responsive a{margin-top: -1.5%;}
+  .topnav.responsive .dropdown-content{width: 100%; text-align: center;}
+  .topnav.responsive{text-align: center;}
 }
